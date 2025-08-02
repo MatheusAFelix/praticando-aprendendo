@@ -1,7 +1,8 @@
-function tocaSom(idElementoAudio) {
-    document.querySelector(idElementoAudio).play();
+function tocaSomPom(){
+    document.querySelector('#som_tecla_pom').play();
 }
 
+<<<<<<< HEAD
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 let contador = 0;
@@ -39,4 +40,14 @@ for (let contador = 0; contador < listaDeTeclas.length; contador ++) {
         tocaSom(idAudio);
     };
 
+    tecla.onkeydown = function () {
+        tecla.classList.add('ativa');
+    }
+
+    tecla.onkeyup = function () {
+        tecla.classList.remove('ativa');
+    }
 }
+=======
+document.querySelector('.tecla_pom').onclick = tocaSomPom;
+>>>>>>> parent of 707e5f7 (Percorrendo Lista, usando for e while.)
